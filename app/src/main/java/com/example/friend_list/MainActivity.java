@@ -18,22 +18,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ViewPager viewPager = findViewById(R.id.leave_viewpager);
-        TabLayout tabLayout = findViewById(R.id.tab_layout);
-        String[] titles = new String[]{"好友列表", "我的好友"}; //设置标题
+        setContentView(R.layout.clock_view);
 
-        List<androidx.fragment.app.Fragment> fragments = new ArrayList<>(); //
-        fragments.add(new FriendListFragment());
-        fragments.add(new Fragment());
-
-        MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager(), fragments);
-        viewPager.setAdapter(adapter);              //绑定adapter
-        tabLayout.setupWithViewPager(viewPager);    //绑定viewPager
-
-        for (int i = 0; i < titles.length; i++) {
-            tabLayout.getTabAt(i).setText(titles[i]);   //设置标题
-        }
+        /**
+         * 作业一
+         */
+//        ViewPager viewPager = findViewById(R.id.leave_viewpager);
+//        TabLayout tabLayout = findViewById(R.id.tab_layout);
+//        String[] titles = new String[]{"好友列表", "我的好友"}; //设置标题
+//
+//        List<androidx.fragment.app.Fragment> fragments = new ArrayList<>(); //
+//        fragments.add(new FriendListFragment());
+//        fragments.add(new Fragment());
+//
+//        MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager(), fragments);
+//        viewPager.setAdapter(adapter);              //绑定adapter
+//        tabLayout.setupWithViewPager(viewPager);    //绑定viewPager
+//
+//        for (int i = 0; i < titles.length; i++) {
+//            tabLayout.getTabAt(i).setText(titles[i]);   //设置标题
+//        }
     }
 
 }
